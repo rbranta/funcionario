@@ -1,2 +1,3 @@
 class Funcionario
+  
 end
