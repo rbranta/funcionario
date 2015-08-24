@@ -72,11 +72,11 @@ RSpec.describe Funcionario do
       end
     end
 
-    context 'redução salarial' do
+    context 'reducao salarial' do
       it do
         subject.salario = 100
         expect { subject.aumento!(-10.0) }.to raise_error(
-          ArgumentError, 'CLT não permite redução salarial'
+          ArgumentError, 'CLT nao permite reducao salarial'
         )
       end
     end
