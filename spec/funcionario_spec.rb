@@ -40,19 +40,19 @@ RSpec.describe Funcionario do
     # end
   end
 
-  # describe '#salario_em_minimos' do
-  #   context 'gravando o salario_em_minimos' do
-  #     it do
-  #       subject.salario_em_minimos = 5
-  #       expect(subject.salario_em_minimos).to eq 5
-  #     end
-  #   end
-  #
-  #   context 'lendo o salario_em_minimos' do
-  #     before { subject.salario_em_minimos = 2 }
-  #     it { expect(subject.salario_em_minimos).to eq 2 }
-  #   end
-  #
+  describe '#salario_em_minimos' do
+    context 'gravando o salario_em_minimos' do
+      it do
+        subject.salario_em_minimos = 5
+        expect(subject.salario_em_minimos).to eq 5
+      end
+    end
+
+    context 'lendo o salario_em_minimos' do
+      before { subject.salario_em_minimos = 2 }
+      it { expect(subject.salario_em_minimos).to eq 2 }
+    end
+
   #   context 'calcula o valor usando salario e salario_minimo' do
   #     before do
   #       subject.salario_em_minimos = 10
@@ -61,7 +61,7 @@ RSpec.describe Funcionario do
   #     end
   #     it { expect(subject.salario_em_minimos).to eq 40.54 }
   #   end
-  # end
+  end
   #
   # describe '#aumento!' do
   #   context 'aumento de salario' do
