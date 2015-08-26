@@ -63,14 +63,14 @@ RSpec.describe Funcionario do
   #   end
   end
   #
-  # describe '#aumento!' do
-  #   context 'aumento de salario' do
-  #     it do
-  #       subject.salario = 100
-  #       subject.aumento! 10.0
-  #       expect(subject.salario).to eq 110
-  #     end
-  #   end
+  describe '#aumento!' do
+    context 'aumento de salario' do
+      it do
+        subject.salario = 100
+        subject.aumento! 10.0
+        expect(subject.salario).to eq 110
+      end
+    end
   #
   #   context 'reducao salarial' do
   #     it do
@@ -80,5 +80,5 @@ RSpec.describe Funcionario do
   #       )
   #     end
   #   end
-  # end
-end
+   end
+ end
